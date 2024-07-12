@@ -164,7 +164,7 @@ The Streamlit app that:
 - The crawling process may take some time depending on the size of the NVIDIA CUDA documentation.
 
 
-##Comprehensive Overview of the components.
+# Comprehensive Overview of the components.
 
 ## 1. **Web Crawler**
 
