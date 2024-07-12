@@ -21,7 +21,7 @@ The project consists of the following main components:
 
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/nvidia-cuda-qa.git
+   git clone https://github.com/kirito-0512/Web_Crawler/tree/main
    cd nvidia-cuda-qa
    ```
 
