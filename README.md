@@ -67,7 +67,7 @@ Open your web browser and navigate to the URL provided by Streamlit (usually htt
 
 ### Web Crawler Components
 
-#### nvidia_crawler.py
+#### 1)nvidia_crawler.py
 
 This file contains the Scrapy spider for crawling NVIDIA CUDA documentation:
 - Defines the `NvidiaCrawler` class
@@ -78,7 +78,7 @@ Key methods:
 - `parse(self, response, depth=1)`: Parses each page and extracts content
 - `clean_text(self, text)`: Cleans the extracted text
 
-#### data_processor.py
+#### 2)data_processor.py
 
 This file handles the processing and storage of crawled data:
 - Implements topic-based text chunking
@@ -89,7 +89,7 @@ Key functions:
 - `chunk_by_topic(text, n_topics=5)`: Chunks text based on topics
 - `process_and_store_data()`: Processes crawled data and stores it in Milvus
 
-#### main.py (Crawler)
+#### 3)main.py (Crawler)
 
 This file orchestrates the crawling and data processing:
 - Sets up and runs the Scrapy crawler
@@ -101,7 +101,7 @@ Key functions:
 
 ### QA System Components
 
-#### data_retrieval.py
+#### 4)data_retrieval.py
 
 This file contains functions for:
 - Query expansion using WordNet and domain-specific terms
@@ -115,7 +115,7 @@ Key functions:
 - `hybrid_retrieval(query, collection, top_k=20)`: Performs hybrid retrieval
 - `re_rank(query, contexts, top_k=5)`: Re-ranks the retrieved contexts
 
-#### llm_interface.py
+#### 5)llm_interface.py
 
 This file handles the interaction with the LLaMA model:
 - Loads the GGUF model
@@ -124,7 +124,7 @@ This file handles the interaction with the LLaMA model:
 Key function:
 - `generate_answer(query, contexts)`: Generates an answer using the LLM
 
-#### streamlit_app.py
+#### 6)streamlit_app.py
 
 The Streamlit app that:
 - Connects to Milvus
